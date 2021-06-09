@@ -6,7 +6,12 @@ public class CountBits {
 
   public static short countBits(int x) {
     // TODO - you fill in here.
-    return 0;
+    short ans = 0;
+    while(x!=0){
+      ans += x & 1;
+      x >>>= 1;
+    }
+    return ans;
   }
 
   public static void main(String[] args) {
